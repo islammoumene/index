@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - moum</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Student Registration</title>
+  <!-- ... other head elements ... -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+  <!-- Include jsPDF library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <!-- Include jsPDF-AutoTable plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>Student Registration Form</h1>
+    <form id="studentForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="surname">Surname:</label>
+      <input type="text" id="surname" required>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" required>
+
+      <label for="department">Department:</label>
+      <input type="text" id="department" required>
+
+      <label for="placeOfBirth">Place of Birth:</label>
+      <input type="text" id="placeOfBirth" required>
+
+      <label for="rate">Rate:</label>
+      <input type="number" id="rate" min="0" step="0.01" required>
+
+      <label for="note">Note:</label>
+      <textarea id="note"></textarea>
+
+      <button type="submit">Register Student</button>
+    </form>
+
+    <h2>Registered Students</h2>
+    <table id="studentTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Surname</th>
+          <th>Date of Birth</th>
+          <th>Age</th>
+          <th>Department</th>
+          <th>Place of Birth</th>
+          <th>Rate</th>
+          <th>Note</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Student rows will be dynamically added here -->
+        <!-- ... existing HTML ... -->
+
+        <button id="downloadAllBtn">Download All Students as PDF</button>
+
+        <!-- ... existing HTML ... -->
+      </tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
